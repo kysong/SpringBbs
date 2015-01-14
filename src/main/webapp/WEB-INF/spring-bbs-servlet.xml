@@ -24,11 +24,11 @@
 	
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
 		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
-		<property name="url" value="jdbc:oracle:thin:@127.0.0.1:1521:XE"/>
-		<property name="username" value="STRUTS2"/>
-		<property name="password" value="BBS"/>
-		<property name="maxActive" value="100"/>
-		<property name="maxWait" value="1000"/>
+		<property name="url" value="jdbc:oracle:thin:@127.0.0.1:1521:ORCL"/>
+		<property name="username" value="java"/>
+		<property name="password" value="school"/>
+		<property name="maxActive" value="10"/>
+		<property name="maxWait" value="100"/>
 		<property name="poolPreparedStatements" value="true"/>
 		<property name="defaultAutoCommit" value="true"/>
 		<property name="validationQuery" value=" SELECT 1 FROM DUAL" />
